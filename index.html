@@ -1,0 +1,507 @@
+Haan 😄 Agar tumhe **prompt nahi, actual website/app ka code** chahiye jisme Class 11 Maths ke saare formulas ho, toh ye simple **HTML + CSS + JavaScript** code hai:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 11 Maths Formula Sheet</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 14px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-bottom: 25px;
+      outline: none;
+    }
+
+    .search-box:focus {
+      border-color: #4f46e5;
+    }
+
+    .chapter {
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .chapter h2 {
+      color: #4f46e5;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .formula {
+      background: #f8f9ff;
+      border-left: 4px solid #4f46e5;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-size: 17px;
+    }
+
+    .important {
+      border-left-color: #ef4444;
+      background: #fff5f5;
+    }
+
+    .tag {
+      color: #ef4444;
+      font-weight: bold;
+      font-size: 13px;
+      margin-right: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .chapter {
+        padding: 16px;
+      }
+
+      .formula {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>📚 Class 11 Maths Formula Sheet</h1>
+    <p>Complete Formula Revision</p>
+  </header>
+
+  <div class="container">
+
+    <input
+      type="text"
+      id="search"
+      class="search-box"
+      placeholder="🔍 Search formula or chapter..."
+      onkeyup="searchFormula()"
+    >
+
+    <!-- SETS -->
+    <div class="chapter">
+      <h2>1. Sets</h2>
+
+      <div class="formula">
+        A ∪ B = {x : x ∈ A or x ∈ B}
+      </div>
+
+      <div class="formula">
+        A ∩ B = {x : x ∈ A and x ∈ B}
+      </div>
+
+      <div class="formula">
+        A - B = {x : x ∈ A and x ∉ B}
+      </div>
+
+      <div class="formula important">
+        <span class="tag">⭐ IMPORTANT</span>
+        n(A ∪ B) = n(A) + n(B) - n(A ∩ B)
+      </div>
+
+      <div class="formula">
+        n(A') = n(U) - n(A)
+      </div>
+
+      <div class="formula">
+        (A ∪ B)' = A' ∩ B'
+      </div>
+
+      <div class="formula">
+        (A ∩ B)' = A' ∪ B'
+      </div>
+    </div>
+
+    <!-- TRIGONOMETRY -->
+    <div class="chapter">
+      <h2>2. Trigonometric Functions</h2>
+
+      <div class="formula important">
+        <span class="tag">⭐ IMPORTANT</span>
+        sin²θ + cos²θ = 1
+      </div>
+
+      <div class="formula">
+        1 + tan²θ = sec²θ
+      </div>
+
+      <div class="formula">
+        1 + cot²θ = cosec²θ
+      </div>
+
+      <div class="formula">
+        tan θ = sin θ / cos θ
+      </div>
+
+      <div class="formula">
+        cot θ = cos θ / sin θ
+      </div>
+
+      <div class="formula">
+        sec θ = 1 / cos θ
+      </div>
+
+      <div class="formula">
+        cosec θ = 1 / sin θ
+      </div>
+
+      <div class="formula">
+        sin(A + B) = sin A cos B + cos A sin B
+      </div>
+
+      <div class="formula">
+        sin(A - B) = sin A cos B - cos A sin B
+      </div>
+
+      <div class="formula">
+        cos(A + B) = cos A cos B - sin A sin B
+      </div>
+
+      <div class="formula">
+        cos(A - B) = cos A cos B + sin A sin B
+      </div>
+
+      <div class="formula">
+        tan(A + B) = (tan A + tan B) / (1 - tan A tan B)
+      </div>
+
+      <div class="formula">
+        tan(A - B) = (tan A - tan B) / (1 + tan A tan B)
+      </div>
+    </div>
+
+    <!-- COMPLEX NUMBERS -->
+    <div class="chapter">
+      <h2>3. Complex Numbers & Quadratic Equations</h2>
+
+      <div class="formula">
+        i = √(-1)
+      </div>
+
+      <div class="formula">
+        i² = -1
+      </div>
+
+      <div class="formula">
+        i³ = -i
+      </div>
+
+      <div class="formula">
+        i⁴ = 1
+      </div>
+
+      <div class="formula important">
+        <span class="tag">⭐ IMPORTANT</span>
+        x = [-b ± √(b² - 4ac)] / 2a
+      </div>
+
+      <div class="formula">
+        Discriminant: D = b² - 4ac
+      </div>
+
+      <div class="formula">
+        α + β = -b/a
+      </div>
+
+      <div class="formula">
+        αβ = c/a
+      </div>
+    </div>
+
+    <!-- P&C -->
+    <div class="chapter">
+      <h2>4. Permutations & Combinations</h2>
+
+      <div class="formula important">
+        <span class="tag">⭐ IMPORTANT</span>
+        n! = n(n-1)(n-2)...3×2×1
+      </div>
+
+      <div class="formula">
+        ⁿPᵣ = n! / (n-r)!
+      </div>
+
+      <div class="formula important">
+        <span class="tag">⭐ IMPORTANT</span>
+        ⁿCᵣ = n! / [r!(n-r)!]
+      </div>
+
+      <div class="formula">
+        ⁿCᵣ = ⁿCₙ₋ᵣ
+      </div>
+
+      <div class="formula">
+        ⁿPᵣ = ⁿCᵣ × r!
+      </div>
+    </div>
+
+    <!-- BINOMIAL -->
+    <div class="chapter">
+      <h2>5. Binomial Theorem</h2>
+
+      <div class="formula important">
+        (a + b)ⁿ = Σ ⁿCᵣ aⁿ⁻ʳ bʳ
+      </div>
+
+      <div class="formula">
+        General term: Tᵣ₊₁ = ⁿCᵣ aⁿ⁻ʳ bʳ
+      </div>
+
+      <div class="formula">
+        ⁿC₀ + ⁿC₁ + ... + ⁿCₙ = 2ⁿ
+      </div>
+
+      <div class="formula">
+        ⁿC₀ - ⁿC₁ + ⁿC₂ - ... = 0
+      </div>
+    </div>
+
+    <!-- SEQUENCE -->
+    <div class="chapter">
+      <h2>6. Sequences & Series</h2>
+
+      <div class="formula important">
+        AP nth term: aₙ = a + (n-1)d
+      </div>
+
+      <div class="formula important">
+        AP Sum: Sₙ = n/2 [2a + (n-1)d]
+      </div>
+
+      <div class="formula">
+        Sₙ = n/2(a + l)
+      </div>
+
+      <div class="formula">
+        GP nth term: aₙ = arⁿ⁻¹
+      </div>
+
+      <div class="formula important">
+        GP Sum: Sₙ = a(rⁿ - 1)/(r - 1)
+      </div>
+
+      <div class="formula">
+        Infinite GP: S∞ = a/(1-r), |r| < 1
+      </div>
+    </div>
+
+    <!-- STRAIGHT LINES -->
+    <div class="chapter">
+      <h2>7. Straight Lines</h2>
+
+      <div class="formula">
+        Slope: m = (y₂-y₁)/(x₂-x₁)
+      </div>
+
+      <div class="formula">
+        y - y₁ = m(x - x₁)
+      </div>
+
+      <div class="formula">
+        y = mx + c
+      </div>
+
+      <div class="formula">
+        Distance between two points =
+        √[(x₂-x₁)² + (y₂-y₁)²]
+      </div>
+
+      <div class="formula">
+        Section formula =
+        ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n))
+      </div>
+    </div>
+
+    <!-- CONIC -->
+    <div class="chapter">
+      <h2>8. Conic Sections</h2>
+
+      <div class="formula">
+        Circle: x² + y² = r²
+      </div>
+
+      <div class="formula">
+        Parabola: y² = 4ax
+      </div>
+
+      <div class="formula">
+        Parabola: x² = 4ay
+      </div>
+
+      <div class="formula">
+        Ellipse: x²/a² + y²/b² = 1
+      </div>
+
+      <div class="formula">
+        Hyperbola: x²/a² - y²/b² = 1
+      </div>
+    </div>
+
+    <!-- LIMIT -->
+    <div class="chapter">
+      <h2>9. Limits & Derivatives</h2>
+
+      <div class="formula">
+        lim(x→0) sin x/x = 1
+      </div>
+
+      <div class="formula">
+        lim(x→0) tan x/x = 1
+      </div>
+
+      <div class="formula">
+        lim(x→0) (1-cos x)/x² = 1/2
+      </div>
+
+      <div class="formula important">
+        <span class="tag">⭐ IMPORTANT</span>
+        d(xⁿ)/dx = nxⁿ⁻¹
+      </div>
+
+      <div class="formula">
+        d(sin x)/dx = cos x
+      </div>
+
+      <div class="formula">
+        d(cos x)/dx = -sin x
+      </div>
+
+      <div class="formula">
+        d(tan x)/dx = sec²x
+      </div>
+    </div>
+
+    <!-- STATISTICS -->
+    <div class="chapter">
+      <h2>10. Statistics</h2>
+
+      <div class="formula">
+        Mean = Σx / n
+      </div>
+
+      <div class="formula">
+        Variance = Σ(x - x̄)² / n
+      </div>
+
+      <div class="formula important">
+        Standard Deviation = √Variance
+      </div>
+
+      <div class="formula">
+        σ² = Σx²/n - x̄²
+      </div>
+    </div>
+
+    <!-- PROBABILITY -->
+    <div class="chapter">
+      <h2>11. Probability</h2>
+
+      <div class="formula important">
+        P(E) = Number of favourable outcomes / Total number of outcomes
+      </div>
+
+      <div class="formula">
+        0 ≤ P(E) ≤ 1
+      </div>
+
+      <div class="formula">
+        P(E') = 1 - P(E)
+      </div>
+
+      <div class="formula">
+        P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+      </div>
+
+      <div class="formula">
+        If A and B are mutually exclusive:
+        P(A ∪ B) = P(A) + P(B)
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Class 11 Maths Formula Sheet
+  </footer>
+
+  <script>
+    function searchFormula() {
+      let input = document
+        .getElementById("search")
+        .value
+        .toLowerCase();
+
+      let chapters = document.querySelectorAll(".chapter");
+
+      chapters.forEach(chapter => {
+        let text = chapter.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+          chapter.style.display = "block";
+        } else {
+          chapter.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
+```
+
+ Isko **`index.html`** naam se save karke browser mein open karo. Isme search bhi chalega aur mobile par bhi responsive rahega.
